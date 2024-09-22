@@ -5,7 +5,7 @@
   --text_light: #6c7e7f;
   --background: #eff3f3;
   --semi_transparent: #4452511c;
-  --green: #809492;
+  --green: #667776;
   --button_radius: 40px;
   --akcent: #ff8a56;
   --text_medium: #595c5c;
@@ -2265,6 +2265,7 @@
 .waves-image-features-4 {
   border-radius: var(--radius_40);
   width: 100%;
+  max-height: 100%;
 }
 
 .waves---grid-image-halves {
@@ -4172,6 +4173,10 @@
   line-height: 120%;
 }
 
+.heading_h3_dark.contact {
+  font-size: 20px;
+}
+
 .waves-icon-64 {
   width: 64px;
   height: 64px;
@@ -4375,6 +4380,7 @@
 .cf-wrapper-1161.different-flex {
   flex-direction: column;
   align-items: flex-start;
+  max-width: 950px;
   padding-top: 100px;
   padding-bottom: 60px;
 }
@@ -4432,7 +4438,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 1160px;
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
@@ -4740,6 +4746,7 @@
 }
 
 .cf-features-section-1-image-contai {
+  mix-blend-mode: overlay;
   object-fit: contain;
   border-radius: 0%;
   max-width: 90%;
@@ -4821,17 +4828,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 90%;
   max-width: 1140px;
-  margin: 120px auto 0;
+  margin: 60px auto 0;
   padding: 70px 70px 70px 80px;
   font-family: Montserrat, sans-serif;
   display: flex;
 }
 
 .cf-form-section-1 {
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 100px;
 }
 
@@ -5401,8 +5408,9 @@
   border-top-left-radius: var(--button_radius);
   border-top-right-radius: var(--button_radius);
   background-color: var(--green_semitransparent);
-  margin-left: 20px;
-  margin-right: 20px;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 64px;
 }
@@ -5418,7 +5426,8 @@
 }
 
 .navbar-logo-center {
-  z-index: auto;
+  z-index: 1000;
+  box-sizing: border-box;
   clear: none;
   position: sticky;
   inset: 0% 0% 0;
@@ -5448,7 +5457,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -5688,6 +5697,11 @@
     background-color: #0000;
   }
 
+  .cf-growth-wrapper {
+    height: 100%;
+    max-height: 100%;
+  }
+
   .cf-growth-grid {
     max-width: 1352px;
   }
@@ -5705,6 +5719,10 @@
     max-width: 1352px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .waves-footer-2, .navbar-logo-center-container.shadow-three {
+    max-width: 1350px;
   }
 }
 
@@ -8445,6 +8463,7 @@
   }
 
   .cf-growth-wrapper {
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -8452,7 +8471,8 @@
   }
 
   .cf-growth-wrapper.large {
-    background-position: 8px 25px;
+    background-image: linear-gradient(to bottom, null, null);
+    margin-bottom: 24px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -8463,6 +8483,11 @@
 
   .headin_h2_dark {
     font-size: 40px;
+  }
+
+  .cf-growth-grid {
+    margin-bottom: 69px;
+    display: block;
   }
 
   .cf-wrapper-1160 {
@@ -8533,7 +8558,13 @@
   }
 
   .heading_h3_dark {
+    clear: none;
+    text-align: left;
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 22px;
+    display: block;
   }
 
   .waves---heading-2-no-margins-6 {
@@ -8694,6 +8725,11 @@
     font-size: 24px;
   }
 
+  .cf-form-left-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .cf-form-main-wrapper {
     margin-top: 12px;
     padding: 60px 20px;
@@ -8727,6 +8763,18 @@
 
   .cf-services-main-wrapper {
     padding-bottom: 40px;
+  }
+
+  .container-6 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .cf-reviewer-position, .cf-reviewer-name {
@@ -8791,6 +8839,16 @@
     background-color: var(--background);
     flex-direction: column;
     display: block;
+  }
+
+  .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-8 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
