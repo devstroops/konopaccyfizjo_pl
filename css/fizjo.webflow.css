@@ -5775,6 +5775,10 @@
     width: 51%;
     max-width: 550px;
   }
+
+  .map {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1440px) {
